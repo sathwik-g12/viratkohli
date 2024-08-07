@@ -1,0 +1,162 @@
+body {
+  background-image: url(imgs/bg.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700; /* Font weight should be a number, not px */
+}
+
+img {
+  height: 500px;
+}
+
+.container {
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.three {
+  grid-column: span 1;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.six {
+  grid-column: span 1;
+  display: flex;
+  justify-content: center;
+}
+
+.five {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 80px;
+}
+
+.five img {
+  height: 350px;
+  float: left;
+  margin-right: 20px;
+}
+
+p {
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.abt {
+  position: fixed;
+}
+
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  body {
+    background-image: url(imgs/bgmedia.jpeg);
+  }
+
+  .five img {
+    height: 300px;
+  }
+
+  .five {
+    padding: 0px 60px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  body {
+    background-image: url(imgs/bgmedia.jpeg);
+  }
+
+  .five img {
+    height: 250px;
+  }
+
+  .five {
+    padding: 0px 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  body {
+    background-image: url(imgs/bgmedia.jpeg);
+  }
+
+  .five img {
+    height: 200px;
+  }
+
+  .five {
+    padding: 0px 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .three, .six, .five {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  body {
+    background-image: url(imgs/bgmedia.jpeg);
+  }
+
+  .five img {
+    height: 150px;
+  }
+
+  .five {
+    padding: 0px 10px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .abt {
+    position: static;
+  }
+}
